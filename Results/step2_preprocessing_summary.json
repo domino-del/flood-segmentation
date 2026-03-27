@@ -1,0 +1,45 @@
+{
+  "patch_size": 256,
+  "stride": 256,
+  "batch_size": 4,
+  "multi_scale": 10000.0,
+  "dem_mean": 151.59597778320312,
+  "dem_std": 39.80539321899414,
+  "train_scenes": [
+    "1_train",
+    "2_train"
+  ],
+  "val_scenes": [
+    "1_val",
+    "2_val"
+  ],
+  "test_scenes": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "train_patches": 1200,
+  "val_patches": 520,
+  "test_patches": 834,
+  "feature_sets": {
+    "raw_s2": 10,
+    "raw_s2_dem": 11,
+    "raw_idx_dem": 16,
+    "raw_idx_hsv_dem": 19
+  },
+  "indices": [
+    "NDWI",
+    "MNDWI",
+    "SWI",
+    "AWEIsh",
+    "AWEInsh"
+  ],
+  "hsv_definition": "HSV from SWIR2,NIR,Red mapped to RGB, following NASA flood paper"
+}

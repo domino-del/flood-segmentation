@@ -1,0 +1,70 @@
+{
+  "data_dir": "c:\\Users\\wattd\\OneDrive\\Desktop\\flood-segmentation\\FRS 2026. Floods Monitoring",
+  "multi_dir": "c:\\Users\\wattd\\OneDrive\\Desktop\\flood-segmentation\\FRS 2026. Floods Monitoring\\multi",
+  "dem_dir": "c:\\Users\\wattd\\OneDrive\\Desktop\\flood-segmentation\\FRS 2026. Floods Monitoring\\dem",
+  "mask_dir": "c:\\Users\\wattd\\OneDrive\\Desktop\\flood-segmentation\\FRS 2026. Floods Monitoring\\masks",
+  "patch_size": 256,
+  "stride": 256,
+  "batch_size": 4,
+  "multi_scale": 10000.0,
+  "dem_mean": 151.59597778320312,
+  "dem_std": 39.80539321899414,
+  "band_names": [
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B8A",
+    "B11",
+    "B12"
+  ],
+  "band_to_idx": {
+    "B02": 0,
+    "B03": 1,
+    "B04": 2,
+    "B05": 3,
+    "B06": 4,
+    "B07": 5,
+    "B08": 6,
+    "B8A": 7,
+    "B11": 8,
+    "B12": 9
+  },
+  "train_scenes": [
+    "1_train",
+    "2_train"
+  ],
+  "val_scenes": [
+    "1_val",
+    "2_val"
+  ],
+  "test_scenes": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "feature_sets": {
+    "raw_s2": 10,
+    "raw_s2_dem": 11,
+    "raw_idx_dem": 16,
+    "raw_idx_hsv_dem": 19
+  },
+  "indices": [
+    "NDWI",
+    "MNDWI",
+    "SWI",
+    "AWEIsh",
+    "AWEInsh"
+  ],
+  "hsv_definition": "HSV from SWIR2,NIR,Red mapped to RGB, following NASA flood paper"
+}
